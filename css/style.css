@@ -1,0 +1,287 @@
+/* Custom CSS for Shina Todo Portfolio */
+
+:root {
+    --light-green: #e8f5e8;
+    --accent-green: #90c695;
+    --dark-green: #4a7c59;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+}
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-green);
+    color: var(--text-dark);
+}
+
+/* Header Styles */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand .navbar-item {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.navbar-brand .brand-name {
+    color: #000000 !important; /* shinaaaaa is black */
+}
+
+.navbar-brand .profile-link {
+    color: var(--accent-green) !important; /* profile/projects is green */
+    border-bottom: 2px solid var(--accent-green);
+    padding-bottom: 2px;
+}
+
+.navbar-burger {
+    color: var(--text-dark);
+}
+
+.navbar-menu .navbar-item {
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu .navbar-item:hover {
+    color: var(--accent-green);
+    background-color: transparent;
+}
+
+/* Profile Section */
+.profile-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--light-green) 0%, #f0f8f0 100%);
+    padding-top: 80px;
+    padding-bottom: 3rem;
+}
+
+.profile-image {
+    margin: 0 auto;
+    border: 4px solid var(--accent-green);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(144, 198, 149, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(144, 198, 149, 0.4);
+}
+
+.profile-image img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+
+.title.is-2 {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.social-links {
+    max-width: 350px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+
+.social-links .social-link {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(144, 198, 149, 0.2);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.social-links .social-link:hover {
+    background: rgba(144, 198, 149, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: var(--dark-green);
+}
+
+.social-links .social-link i {
+    width: 24px;
+    margin-right: 12px;
+    color: var(--accent-green);
+}
+
+.bio {
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.projects-section .title.is-3 {
+    color: var(--text-dark);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.projects-section .title.is-3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-green);
+    border-radius: 2px;
+}
+
+.project-card {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-card .card-image img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.project-card .card-content {
+    padding: 1.5rem;
+}
+
+.project-card .title.is-4 {
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.project-card .content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile-section {
+        padding-top: 80px;
+        padding-bottom: 2rem;
+        min-height: auto;
+    }
+
+    .title.is-2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .profile-image {
+        margin-bottom: 1rem;
+    }
+
+    .social-links {
+        text-align: center;
+        max-width: 320px;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .social-links .social-link {
+        justify-content: flex-start;
+        font-size: 0.95rem;
+        padding: 0.7rem 0.9rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .bio {
+        margin-top: 1rem;
+    }
+
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .navbar-menu {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .columns.is-multiline .column.is-12 {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+}
+
+/* Smooth animations */
+* {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Active section highlighting */
+.navbar-item.active {
+    color: var(--accent-green) !important;
+    font-weight: 600;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-green);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-green);
+}
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shinaaaaa / profile</title>
+    
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#profile">
+                <span class="has-text-weight-bold brand-name">shinaaaaa</span>
+                <span class="mx-2">/</span>
+                <span class="has-text-weight-bold profile-link" id="current-section">profile</span>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#profile">Profile</a>
+                <a class="navbar-item" href="#projects">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section profile-section">
+        <div class="container">
+            <div class="has-text-centered">
+                <!-- Profile Image -->
+                <figure class="image is-128x128 is-inline-block profile-image">
+                    <img class="is-rounded" src="images/now_printing_square.jpg" alt="百々しな Profile">
+                </figure>
+                
+                <!-- Name -->
+                <h1 class="title is-2 mt-5">百々しな (Shina Todo)</h1>
+                
+                <!-- SNS Links -->
+                <div class="content social-links">
+                    <a class="social-link" href="https://x.com/1010_473" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        X（旧Twitter）：@1010_473
+                    </a>
+                    <a class="social-link" href="https://github.com/shinaaaaa" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub：@shinaaaaa
+                    </a>
+                    <a class="social-link" href="https://discordapp.com/users/246835055765356565" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        Discord：ShinaTodo#xxxx
+                    </a>
+                    <a class="social-link" href="https://note.com/todo_shina" target="_blank">
+                        <i class="fas fa-sticky-note"></i>
+                        Note：note.com/todo_shina
+                    </a>
+                </div>
+                
+                <!-- Bio -->
+                <div class="content bio">
+                    <p>技術と音楽が好きな個人開発者。<br>
+                    趣味でLEDとFlutterをいじっています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered mb-6">Projects</h2>
+            
+            <div class="columns is-multiline">
+                <!-- mayuzumi Project -->
+                <div class="column is-12">
+                    <div class="card project-card">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="images/now_printing_landscape.jpg" alt="mayuzumi">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">mayuzumi</h3>
+                            <div class="content">
+                                <p>enza版シャニマス専用ブラウザ。serizawaのフォーク。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SyncLightime Project -->
+                <div class="column is-12">
+                    <div class="card project-card">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="images/now_printing_landscape.jpg" alt="SyncLightime">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">SyncLightime</h3>
+                            <div class="content">
+                                <p>LEDとスマホを同期させて演出する照明制御アプリ。<br>
+                                音楽に合わせた光の演出で空間を彩ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P-Greelnk Project -->
+                <div class="column is-12">
+                    <div class="card project-card">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="images/now_printing_landscape.jpg" alt="P-Greelnk">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">P-Greelnk</h3>
+                            <div class="content">
+                                <p>Pグリっぽいアプリにしたい。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
