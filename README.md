@@ -1,35 +1,9 @@
-# 百々しな（Shina Todo）ポートフォリオサイト
+# 百々しな(Shina Todo)ポートフォリオサイト
 
-百々しな（Shina Todo）さんのポートフォリオサイトです。
-
-## GitHub Pagesでの公開方法
-
-### 1. GitHubリポジトリの作成
-1. GitHubにログインし、新しいリポジトリを作成
-2. リポジトリ名は `shinaaaaa.github.io` または任意の名前
-3. Public リポジトリとして作成
-
-### 2. ファイルのアップロード
-以下のファイルをリポジトリのルートディレクトリにアップロード：
-```
-index.html
-css/style.css
-js/script.js
-images/now_printing_square.jpg
-images/now_printing_landscape.jpg
-```
-
-### 3. GitHub Pagesの有効化
-1. リポジトリの Settings タブを開く
-2. 左サイドバーの「Pages」をクリック
-3. Source で「Deploy from a branch」を選択
-4. Branch で「main」（または「master」）を選択
-5. Folder で「/ (root)」を選択
-6. 「Save」をクリック
+百々しな(Shina Todo)のポートフォリオサイトです。
 
 ### 4. 公開URL
-- リポジトリ名が `shinaaaaa.github.io` の場合: `https://shinaaaaa.github.io/`
-- その他の名前の場合: `https://shinaaaaa.github.io/リポジトリ名/`
+`https://shinaaaaa.github.io/`
 
 ## ローカル開発
 
